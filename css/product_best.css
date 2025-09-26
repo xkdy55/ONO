@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+
+.product_sec {
+    width: 100%;
+    padding: 200px 0;
+
+    & .product_art {
+
+        /* top contain */
+        & .product_top_contain {
+            display: flex;
+            padding: 10px 20px;
+
+            & .product_title {
+                width: 35%;
+
+                & h2 {
+                    font-size: 40px;
+                    font-weight: 500;
+                }
+            }
+
+            & .product_nav {
+                width: 65%;
+                display: flex;
+                align-items: end;
+                padding: 0 20px;
+
+                & li {
+                    font-size: 14px;
+
+                    & a {
+                        color: #838383;
+                    }
+
+                }
+
+                & .product_nav_best {
+                    & a {
+                        color: #000000;
+                        font-weight: 800;
+                    }
+                }
+
+                & .product_right_nav_bar {
+                    font-size: 14px;
+                    color: #838383;
+                }
+            }
+        }
+
+        & .product_bottom_contain {
+            display: flex;
+
+            /* 왼쪽 contain */
+            & .product_left_contain {
+                width: 35%;
+                padding: 20px;
+                position: relative;
+
+                & .product_left_img {
+                    position: sticky;
+                    top: 140px;
+
+                    & img {
+                        width: 100%;
+                    }
+
+                    & .product_left_img_title {
+                        display: none;
+                        color: #fff;
+                        font-size: 40px;
+                        position: absolute;
+                        top: 1%;
+                        left: 3%;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            /* 오른쪽 contain */
+            & .product_right_contain {
+                width: 65%;
+
+                & .product_right_box_parent {
+                    display: flex;
+
+                    & .product_box {
+                        width: 33.333%;
+                        padding: 20px;
+
+
+                        & .product_img {
+
+                            & img {
+                                width: 100%;
+
+                            }
+
+                        }
+
+                        & .product_txt {
+                            display: flex;
+                            height: 80px;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 10px;
+
+                            & h3 {
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: #000;
+                            }
+
+                            & p {
+                                font-size: 13px;
+                                font-weight: 600;
+                                white-space: nowrap;
+                                color: #585858;
+                            }
+
+                        }
+
+                        & .cart_btn {
+                            width: 100%;
+                            background-color: #dfdfdf;
+                            text-align: center;
+                            padding: 15px;
+                            color: #888888;
+                            font-weight: 500;
+                            letter-spacing: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+/* 반응형-태블릿 -------------------------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+    .product_sec {
+
+        & .product_art {
+
+            /* top contain */
+            & .product_top_contain {
+                padding: 10px 10px;
+
+                & .product_title {
+                    width: 50%;
+
+                }
+
+                & .product_nav {
+                    width: 50%;
+                    padding: 0 10px;
+                }
+            }
+
+            & .product_bottom_contain {
+
+                /* 왼쪽 contain */
+                & .product_left_contain {
+                    width: 50%;
+                    padding: 10px;
+
+                }
+
+                /* 오른쪽 contain */
+                & .product_right_contain {
+                    width: 50%;
+
+                    & .product_right_box_parent {
+
+                        & .product_box_tablet {
+                            display: none;
+                        }
+
+                        & .product_box {
+                            width: 50%;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+
+
+/* 반응형-모바일 ------------------------------------------------------------------------- */
+@media only screen and (max-width: 720px) {
+
+    .product_sec {
+
+        & .product_art {
+
+            /* top contain */
+            & .product_top_contain {
+                display: block;
+
+                & .product_title {
+                    padding: 0 5px 10px;  
+                }
+  
+            }
+
+            & .product_bottom_contain {
+                display: block;
+
+                /* 왼쪽 contain */
+                & .product_left_contain {
+                    width: 100%;
+                    padding: 10px;
+
+                    & .product_left_img {
+                        aspect-ratio: 4 / 3;
+                        overflow: hidden;
+
+                        & img {
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            display: block;
+
+                        }
+                        
+                        & .product_left_img_title{
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                /* 오른쪽 contain */
+                & .product_right_contain {
+                    width: 100%;
+                    padding-top: 50px;
+                    
+                }
+            }
+
+        }
+    }
+
+}

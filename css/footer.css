@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+/* 푸터 ----------------------------------------------------------------------------------*/
+.f_sec {
+    width: 100%;
+    height: 270px;
+    background-color: #272727;
+    padding: 40px 0;
+
+    & .f_art {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        color: #fff;
+
+        & .f_left {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 200px;
+
+            & h2 {
+                font-weight: 700;
+                font-size: 24px;
+            }
+
+            & p {
+                font-weight: 500;
+                font-size: 14px;
+            }
+
+            & .f_left_border {
+                width: 80%;
+                border-top: 1px solid #fff;
+            }
+
+            & .f_left_txt {
+                margin-top: -15px;
+            }
+        }
+
+        & .f_right {
+            width: 25%;
+
+            & .f_right_top {
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                & p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+
+                & p:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            & .f_right_bottom {
+                height: 50%;
+                display: flex;
+                justify-content: end;
+                align-items: end;
+
+                & a {
+                    & .f_btn {
+                        width: 24px;
+                        height: 24px;
+                        background-color: #6a6a6a;
+                        margin-left: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 5px;
+
+                        & img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+
+                    & .f_btn:hover {
+                        background-color: #d0d0d0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* 반응형-태블릿 -------------------------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+
+    .f_sec {
+        & .f_art {
+            & .f_right {
+                width: 20%;
+
+                & .f_right_top {
+                    & p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* 반응형-모바일 ------------------------------------------------------------------------- */
+@media only screen and (max-width: 720px) {
+
+    .f_sec {
+        & .f_art {
+            & .f_left{
+                width: 70%;
+                & p{
+                    font-size: 12px;
+                }
+            }
+            & .f_right {
+                width: 30%;
+
+                & .f_right_top {
+                    & p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

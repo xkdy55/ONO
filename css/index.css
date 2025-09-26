@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* 섹션1 ----------------------------------------------------------------------------------*/
+.sec_first {
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+
+
+    & article {
+        position: relative;
+
+        & .sec_first_background_img {
+            position: absolute;
+            z-index: 1;
+            background-color: rebeccapurple;
+            width: 100%;
+            height: 100vh;
+
+            & img {
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* 비율 유지하면서 채우기 */
+                object-position: top center;
+                /* 위쪽 기준으로 채우고 아래 잘리게 */
+                z-index: 1;
+            }
+        }
+
+        & .sec_first_textBox {
+            position: absolute;
+            top: 65vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+            height: 300px;
+            text-align: center;
+
+            & h2 {
+                font-size: 35px;
+                color: #fff;
+            }
+
+            & p {
+                margin-top: 20px;
+                line-height: 25px;
+                font-weight: 700;
+                color: #fff;
+            }
+
+            & .sec_first_moreBtn {
+                width: 230px;
+                height: 55px;
+                background-color: #000;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                border-radius: 10px;
+
+                & a {
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+
+            & .sec_first_moreBtn:hover {
+                background-color: #fff;
+
+                & a {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* 섹션2 ---------------------------------------------------------------------------------- */
+.sec_second_bestSeller {
+    width: 100%;
+    padding: 200px 0 0;
+
+    & .sec_second_bestSeller_title {
+
+        & h3 {
+            margin-left: 30px;
+            font-size: 40px;
+        }
+    }
+
+    & .sec_second_bestSeller_contain {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+
+        & .sec_second_bestSeller_box {
+            width: 25%;
+
+            & .sec_second_bestSeller_img {
+                width: 100%;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            & .sec_second_bestSeller_txtBox {
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 20px;
+
+                & h2 {
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                & p {
+                    font-size: 25px;
+                    color: #000;
+                    font-weight: 800;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+/* 섹션3 ----------------------------------------------------------------------------------*/
+.sec_third_rivew {
+    width: 100%;
+    padding: 300px 0 0;
+
+    & .sec_third_rivew_art {
+        & h2 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        & .sec_third_rivew_contain {
+            width: 70%;
+            height: 800px;
+            margin: 0 auto;
+            display: flex;
+
+            & .rivew_left {
+                width: 45%;
+                height: 100%;
+
+                & .rivew_left_img {
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+
+                    & img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                    & .rivew_left_txtBox {
+                        position: absolute;
+                        z-index: 99;
+                        width: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        bottom: 0;
+                        color: #fff;
+                        font-size: 14px;
+                        font-weight: 300;
+                        padding: 15px 10px;
+                    }
+
+                }
+            }
+
+            & .rivew_right {
+                width: 55%;
+                height: 100%;
+
+                & .rivew_right_box_parent {
+                    display: flex;
+                    height: 50%;
+
+                    & .rivew_right_box {
+                        width: 50%;
+                        height: 100%;
+
+                        & .rivew_right_img {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+
+                            & img {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+
+                            & .rivew_right_txtBox {
+                                position: absolute;
+                                z-index: 99;
+                                width: 100%;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                bottom: 0;
+                                color: #fff;
+                                font-size: 14px;
+                                font-weight: 300;
+                                padding: 15px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 섹션4 신제품 ----------------------------------------------------------------------------------*/
+.sec_fourth_new {
+    width: 100%;
+    padding: 300px 0 0;
+
+    & .sec_fourth_new_title {
+
+        & h3 {
+            margin-left: 30px;
+            font-size: 40px;
+        }
+    }
+
+    & .sec_second_bestSeller_contain {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
+
+        & .sec_second_bestSeller_box {
+            width: 25%;
+
+            & .sec_second_bestSeller_img {
+                width: 100%;
+
+                & img {
+                    width: 100%;
+                }
+            }
+
+            & .sec_second_bestSeller_txtBox {
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 20px;
+
+                & h2 {
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                & p {
+                    font-size: 25px;
+                    color: #000;
+                    font-weight: 800;
+                    margin-top: 5px;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+/* 섹션5 ----------------------------------------------------------------------------------*/
+.sec_fifth_sinsa {
+    width: 100%;
+    padding: 300px 0 0;
+
+    & .sec_fifth_sinsa_art {
+        & .sec_fifth_sinsa_img {
+            width: 100%;
+            height: 80vh;
+            position: relative;
+            overflow: hidden;
+
+            & img {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                min-height: 100%;
+                /* 세로가 부모보다 작을 경우 늘리기 */
+
+
+            }
+
+            & .sec_fifth_sinsa_txtBox {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 2%;
+                z-index: 999;
+                width: 100%;
+                color: #fff;
+
+                & h2 {
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 반응형-태블릿 -------------------------------------------------------------------------*/
+@media only screen and (max-width: 1024px) {
+
+    /* 섹션1 태블릿 -------------------------------------------------- */
+    .sec_first {
+        height: 768px;
+
+        & article {
+            & .sec_first_background_img {
+                height: 768px;
+            }
+
+            & .sec_first_textBox {
+                top: 40vh;
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+
+    /* 섹션2 태블릿 ------------------------------------------------------ */
+    .sec_second_bestSeller {
+
+        & .sec_second_bestSeller_contain {
+            & .sec_second_bestSeller_box {
+                width: 33.333%;
+            }
+        }
+    }
+
+    .tablet_none {
+        display: none;
+    }
+
+
+
+
+    /* 섹션3 태블릿------------------------------------------------------------*/
+    .sec_third_rivew {
+        & .sec_third_rivew_art {
+            & .sec_third_rivew_contain {
+                width: 90%;
+                height: 600px;
+            }
+        }
+    }
+
+
+    /* 섹션4 태블릿 ------------------------------------------------------ */
+    .sec_fourth_new {
+        & .sec_second_bestSeller_contain {
+            & .sec_second_bestSeller_box {
+                width: 33.333%;
+            }
+        }
+    }
+
+
+    /* 섹션5  태블릿 ------------------------------------------------------------*/
+    .sec_fifth_sinsa {
+        & .sec_fifth_sinsa_art {
+            & .sec_fifth_sinsa_img {
+                height: 50vh;
+                & .sec_fifth_sinsa_txtBox {
+                    & h2 {
+                        font-size: 35px;
+                    }
+                    & p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/* 반응형-모바일 ------------------------------------------------------------------------- */
+@media only screen and (max-width: 720px) {
+
+    /* 섹션 1 모바일 ------------------------------------------------- */
+    .sec_first {
+        height: 800px;
+
+        & article {
+            height: 100%;
+
+            & .sec_first_background_img {
+                height: 100%;
+            }
+
+            & .sec_first_textBox {
+                top: 50vh;
+            }
+        }
+    }
+
+
+    /* 섹션2 모바일 ------------------------------------------------------ */
+    .sec_second_bestSeller {
+        & .sec_second_bestSeller_contain {
+            & .sec_second_bestSeller_box {
+                width: 50%;
+            }
+        }
+    }
+
+    .mobile_none {
+        display: none;
+    }
+
+
+
+
+    /* 섹션3 모바일-------------------------------------------------------------------*/
+    .sec_third_rivew {
+        & .sec_third_rivew_art {
+            & .sec_third_rivew_contain {
+                width: 90%;
+
+                & .rivew_right {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+
+    /* 섹션4 모바일 ------------------------------------------------------ */
+    .sec_fourth_new {
+        & .sec_second_bestSeller_contain {
+            & .sec_second_bestSeller_box {
+                width: 50%;
+            }
+        }
+    }
+
+
+    /* 섹션5  모바일 ------------------------------------------------------------*/
+    .sec_fifth_sinsa {
+        & .sec_fifth_sinsa_art {
+            & .sec_fifth_sinsa_img {
+                & .sec_fifth_sinsa_txtBox {
+                    & h2 {
+                        font-size: 30px;
+                    }
+                    & p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
