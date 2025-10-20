@@ -27,10 +27,15 @@
 ## 📁 디렉토리 구조
 
 /프로젝트 루트
+
 │
+
 ├── /css
+
 │ ├── header.css # 헤더 섹션 스타일
+
 │ ├── index.css # 메인 페이지 스타일
+
 │ ├── introduce.css # 소개 페이지 스타일
 │ ├── notice.css # 문의 페이지 스타일
 │ ├── product_best.css # 상품 페이지 스타일
